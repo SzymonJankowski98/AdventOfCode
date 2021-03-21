@@ -11,4 +11,4 @@ numbers.sort!
   numbers[i] -= numbers[i-1]
 end
 
-puts numbers.count(1) * (numbers.count(3) + 1)
+puts "number is: #{numbers.count(1) * (numbers.count(3) + 1)}"

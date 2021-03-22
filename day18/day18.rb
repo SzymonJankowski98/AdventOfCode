@@ -20,7 +20,7 @@ def calculate(line)
       line[(index)..closing_par_index] = calculate(line[(index + 1)...closing_par_index])
     end
   end
-  while not line.scan(/\D/).empty?
+  until line.scan(/\D/).empty?
     single_operation = line[/\d+ [*+] \d+/]
     args = single_operation.split
     if args[1] == '+'
